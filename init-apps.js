@@ -123,7 +123,7 @@ singleSpa.registerApplication({
 });
 
 singleSpa.registerApplication({
-  name: "es5-app",
+  name: "my-angularjs-app",
   app: angularJSApp,
   activeWhen: () => window.showAngularJSApp, //parseQuery(document.location.search).app === "angularjs",
 });
