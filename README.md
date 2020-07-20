@@ -8,7 +8,7 @@ npm start
 ```
 ## Demo
 
-[https://single-spa-alpine-angularjs-app.netlify.app/](https://single-spa-alpine-angularjs-app.netlify.app/){:target="_blank"}
+[https://single-spa-alpine-angularjs-app.netlify.app/](https://single-spa-alpine-angularjs-app.netlify.app/)
 
 # credits
 
