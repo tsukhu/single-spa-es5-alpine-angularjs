@@ -6,6 +6,9 @@ A minimalistic single-spa example with an angularjs and an alpine app. This is b
 npm install # or yarn install
 npm start
 ```
+## Demo
+
+https://single-spa-alpine-angularjs-app.netlify.app/ 
 
 # credits
 
