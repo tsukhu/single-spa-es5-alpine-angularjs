@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/single-spa"></script>
+  <script src="https://cdn.jsdelivr.net/npm/single-spa-html"></script>
+  <link
+    href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="//cdn.muicss.com/mui-0.10.3/extra/mui-colors.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/alpinejs@2.4.1/dist/alpine.min.js"
+    defer
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/single-spa-angularjs@3.3.0/lib/single-spa-angularjs.min.js"></script>
+  <script src="https://unpkg.com/angular@1.6.9/angular.min.js"></script>
+
+  <body class="mui--bg-color-deep-purple-50">
+    <script src="/init-apps.js"></script>
+    <div class="mui-container">
+      <button class="mui-btn mui-btn--primary" onclick="toggleEs5App()">
+        Toggle AngularJS app
+      </button>
+      <button class="mui-btn mui-btn--primary" onclick="toggleAlpineJSApp()">
+        Toggle Alpine app
+      </button>
+    </div>
+
+    <script>
+      function toggleEs5App() {
+        window.showEs5App = !window.showEs5App;
+        window.showAlpineApp = false;
+      }
+      function toggleAlpineJSApp() {
+        window.showAlpineApp = !window.showAlpineApp;
+        window.showEs5App = false;
+      }
+    </script>
+  </body>
+</html>

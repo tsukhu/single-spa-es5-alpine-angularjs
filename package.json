@@ -1,0 +1,15 @@
+{
+  "name": "single-spa-es5-alpine-angularjs",
+  "repository": "git@github.com:tsukhu/single-spa-es5-alpine-angularjs.git",
+  "author": "Tarun Kumar Sukhu",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "version": "1.0.0",
+  "description": "Single SPA Alpine JS and Angular example",
+  "main": "index.js"
+}
