@@ -21,25 +21,15 @@
   <script src="https://unpkg.com/angular@1.6.9/angular.min.js"></script>
 
   <body class="mui--bg-color-deep-purple-50">
-    <script src="/init-apps.js"></script>
+
     <div class="mui-container">
-      <button class="mui-btn mui-btn--primary" onclick="toggleEs5App()">
+      <button class="mui-btn mui-btn--primary" onclick="toggleAngularJSApp()">
         Toggle AngularJS app
       </button>
       <button class="mui-btn mui-btn--primary" onclick="toggleAlpineJSApp()">
         Toggle Alpine app
       </button>
     </div>
-
-    <script>
-      function toggleEs5App() {
-        window.showEs5App = !window.showEs5App;
-        window.showAlpineApp = false;
-      }
-      function toggleAlpineJSApp() {
-        window.showAlpineApp = !window.showAlpineApp;
-        window.showEs5App = false;
-      }
-    </script>
+    <script src="/init-apps.js"></script>
   </body>
 </html>

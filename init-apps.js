@@ -1,4 +1,18 @@
-const es5App = window.singleSpaAngularjs.default({
+function toggleAngularJSApp() {
+  window.showAngularJSApp = !window.showAngularJSApp;
+  window.showAlpineApp = false;
+  singleSpa.triggerAppChange();
+}
+
+function toggleAlpineJSApp() {
+  window.showAlpineApp = !window.showAlpineApp;
+  window.showAngularJSApp = false;
+  singleSpa.triggerAppChange();
+}
+
+
+// Initialize Angular JS App
+const angularJSApp = window.singleSpaAngularjs.default({
   angular: angular,
   mainAngularModule: "main-module",
   uiRouter: false,
@@ -29,7 +43,7 @@ angular.module("main-module").component("root", {
   },
 });
 
-// es5App is a global variable used in the html file
+// Initialize Alpine JS App
 const alpineApp = window.singleSpaHtml.default({
   template: (props) => `
   <div class="mui-container">
@@ -110,8 +124,8 @@ singleSpa.registerApplication({
 
 singleSpa.registerApplication({
   name: "es5-app",
-  app: es5App,
-  activeWhen: () => window.showEs5App, //parseQuery(document.location.search).app === "angularjs",
+  app: angularJSApp,
+  activeWhen: () => window.showAngularJSApp, //parseQuery(document.location.search).app === "angularjs",
 });
 
 singleSpa.start();
